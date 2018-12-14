@@ -17,19 +17,18 @@ namespace TechJobs.ViewModels
         [Display(Name = "Keyword:")]
         public string Value { get; set; } = "";
 
+        //public SearchJobsViewModel()
+        public JobFieldType Column = JobFieldType.All;
+        
         public SearchJobsViewModel()
         {
-            // Populate the list of all columns
-            Column = JobFieldType.All;
-
             Columns = new List<JobFieldType>();
 
             foreach (JobFieldType enumVal in Enum.GetValues(typeof(JobFieldType)))
             {
                 Columns.Add(enumVal);
             }
-
-
         }
+        
     }
 }

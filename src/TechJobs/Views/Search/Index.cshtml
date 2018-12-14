@@ -4,9 +4,9 @@
 
 <form action="/Search/Results">
     <p>
-        @foreach (var column in Model.Columns)
+       @foreach (var column in Model.Columns)
         { 
-            var checkedColumn = column.Equals(Model.Column);
+           var checkedColumn = column.Equals(Model.Column);
 
             <span>
                 <input type="radio"

@@ -40,6 +40,8 @@ namespace TechJobs.ViewModels
 
             JobData jobData = JobData.GetInstance();
 
+            
+
             foreach (Employer field in jobData.Employers.ToList())
             {
                 Employers.Add(new SelectListItem
